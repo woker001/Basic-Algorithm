@@ -20,11 +20,9 @@ def merge (h,m,U,V,S):
         if(U[i] < V[j]):
             S[k]=U[i]
             i+=1
-
         else:
             S[k]=V[j]
             j+=1
-
         k+=1
     if(i>=h):
         for i in range(j,m):
@@ -34,6 +32,6 @@ def merge (h,m,U,V,S):
         for i in range(i,h):
             S[k]=U[i]
             k+=1
-
+            
 mergeSort(len(S),S)
 print(S)
